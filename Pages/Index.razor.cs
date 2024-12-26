@@ -24,7 +24,7 @@ namespace WindowsPhoneSpeedyBlupi.Pages
             // init game
             if (_game == null)
             {
-                _game = new WindowsPhoneSpeedyBlupiGame();
+                _game = new Game1();
                 _game.Run();
             }
 
