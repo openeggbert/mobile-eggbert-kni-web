@@ -22,6 +22,12 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
 
+<ItemGroup>
+  <Content Update="wwwroot\**\*">
+    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+  </Content>
+</ItemGroup>
+
   <ItemGroup>
     <Compile Include="Accelerometer.cs" />
     <Compile Include="AccelerometerDummyImpl.cs" />
