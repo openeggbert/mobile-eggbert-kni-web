@@ -55,7 +55,7 @@
     <Compile Include="TinyRect.cs" />
     <Compile Include="TrialMode.cs" />
     <Compile Include="Worlds.cs" />
-    <Compile Include="WorldTxt.cs" />
+    <Compile Include="worldscs\WorldTxt.cs" />
   </ItemGroup>
 
 
