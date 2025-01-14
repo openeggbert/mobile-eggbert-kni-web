@@ -1,6 +1,7 @@
 using System;
 using Microsoft.JSInterop;
 using Microsoft.Xna.Framework;
+using static WindowsPhoneSpeedyBlupi.EnvClasses;
 
 namespace WindowsPhoneSpeedyBlupi.Pages
 {
@@ -24,6 +25,7 @@ namespace WindowsPhoneSpeedyBlupi.Pages
             // init game
             if (_game == null)
             {
+                Env.init(Impl.KNI, Platform.Web);
                 _game = new Game1();
                 _game.Run();
             }

@@ -17,9 +17,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>KNI;WEB</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>KNI;WEB</DefineConstants>
   </PropertyGroup>
 
 <ItemGroup>
@@ -29,32 +31,38 @@
 </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Accelerometer.cs" />
-    <Compile Include="AccelerometerDummyImpl.cs" />
-    <Compile Include="AccelerometerEventArgs.cs" />
-    <Compile Include="AccelerometerFactory.cs" />
-    <Compile Include="AccelerometerFailedException.cs" />
-    <Compile Include="Decor.cs" />
-    <Compile Include="Def.cs" />
-    <Compile Include="GameData.cs" />
-    <Compile Include="InputPad.cs" />
-    <Compile Include="Jauge.cs" />
-    <Compile Include="MarketPlace.cs" />
-    <Compile Include="Misc.cs" />
-    <Compile Include="MyResource.cs" />
+    <Compile Include="Microsoft.Devices.Sensors\Accelerometer.cs" />
+    <Compile Include="Microsoft.Devices.Sensors\AccelerometerFailedException.cs" />
+    <Compile Include="Microsoft.Devices.Sensors\AccelerometerReading.cs" />
+    <Compile Include="Microsoft.Devices.Sensors\ISensorReading.cs" />
+    <Compile Include="Microsoft.Devices.Sensors\SensorBase.cs" />
+    <Compile Include="Microsoft.Devices.Sensors\SensorFailedException.cs" />
+    <Compile Include="Microsoft.Devices.Sensors\SensorReadingEventArgs.cs" />
+    <Compile Include="Microsoft.Xna.Framework.GamerServices\Guide.cs" />
+    <Compile Include="Microsoft.Xna.Framework.GamerServices\TrialMode.cs" />
+    <Compile Include="LocalStorageHelperHolder.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Decor.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Def.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/GameData.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/InputPad.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Jauge.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Misc.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/MyResource.cs" />
     <Compile Include="Pages\Index.razor.cs" />
-    <Compile Include="Pixmap.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Pixmap.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Game1.cs" />
-    <Compile Include="Resource.cs" />
-    <Compile Include="Slider.cs" />
-    <Compile Include="Sound.cs" />
-    <Compile Include="Tables.cs" />
-    <Compile Include="Text.cs" />
-    <Compile Include="TinyPoint.cs" />
-    <Compile Include="TinyRect.cs" />
-    <Compile Include="TrialMode.cs" />
-    <Compile Include="Worlds.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Game1.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Resource.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Slider.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Sound.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Tables.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Text.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/TinyPoint.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/TinyRect.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Worlds.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi/Env.cs" />
+    <Compile Include="WindowsPhoneSpeedyBlupi\EnvClasses.cs" />
+
     <Compile Include="worldscs\WorldTxt.cs" />
   </ItemGroup>
 
@@ -403,6 +411,10 @@
 
   <ItemGroup>
     <KniContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LocalStorageHelperHolder.cs" />
   </ItemGroup>
 
 </Project>

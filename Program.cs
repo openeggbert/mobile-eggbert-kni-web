@@ -18,7 +18,11 @@ namespace WindowsPhoneSpeedyBlupi
             {
                 BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
             });
-            await builder.Build().RunAsync();
+            //builder.Services.AddSingleton<LocalStorageHelper>();
+            var app = builder.Build();
+            //LocalStorageHelper localStorageHelper = app.Services.GetRequiredService<LocalStorageHelper>();
+            //LocalStorageHelperHolder.LocalStorageHelper = localStorageHelper;
+            await app.RunAsync();
         }
     }
 }
