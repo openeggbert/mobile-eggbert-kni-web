@@ -4,3 +4,6 @@
 [submodule "worlds"]
 	path = worlds
 	url = https://code.openeggbert.com/openeggbert/speedy-blupi-dadagames-worlds
+[submodule "worldscs"]
+	path = worldscs
+	url = https://code.openeggbert.com/openeggbert/speedy-blupi-dadagames-worldscs
