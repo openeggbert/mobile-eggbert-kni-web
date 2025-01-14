@@ -402,7 +402,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <KniContentReference Include="Content\WindowsPhoneSpeedyBlupiContent.mgcb" />
+    <KniContentReference Include="Content\Content.mgcb" />
   </ItemGroup>
 
 </Project>
