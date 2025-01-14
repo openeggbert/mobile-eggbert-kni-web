@@ -7,3 +7,6 @@
 [submodule "worldscs"]
 	path = worldscs
 	url = https://code.openeggbert.com/openeggbert/speedy-blupi-dadagames-worldscs
+[submodule "WindowsPhoneSpeedyBlupi"]
+	path = WindowsPhoneSpeedyBlupi
+	url = https://code.openeggbert.com/openeggbert/mobile-eggbert-core
